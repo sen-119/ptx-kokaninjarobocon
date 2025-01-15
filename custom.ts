@@ -30,19 +30,19 @@ namespace ロボコン {
      */
     //% block
 export function サーボ(s: number , e: MyEnum): void {
-    if (true) { "前" } 
+    if (true) {MyEnum.前}
     servos.P1.run(s - s * 2)
     servos.P2.run(s)
-    if (true) { "後ろ" }
+    if (true) {MyEnum.後ろ}
     servos.P1.run(s)
     servos.P2.run(s - s *2)
-    if (true) { "右" }
+    if (true) {MyEnum.右}
     servos.P1.stop()
     servos.P2.run(s)
-    if (true) { "左" }
+    if (true) {MyEnum.左}
     servos.P1.run(s - s * 2)
     servos.P2.stop()
-    if (true) { "止まる" }
+    if (true) {MyEnum.止まる}
     servos.P1.stop()
     servos.P2.stop()
 }
