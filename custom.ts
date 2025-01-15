@@ -13,7 +13,7 @@ enum MyEnum {
     右,
     //% block="左"
     左,
-    //% block="左"
+    //% block="止まる"
     止まる,
 }
 
@@ -29,10 +29,19 @@ namespace ロボコン {
      * @param e describe parameter here
      */
     //% block
-export function 速度(s: number , e: MyEnum): void {
-    if (true) {
-        
-    }
+export function サーボ(s: number , e: MyEnum): void {
+    if (true) { "前" } 
+    servos.P1.run(s - s * 2)
+    servos.P2.run(s)
+    if (true) { "後ろ" }
+    servos.P1.run(s)
+    servos.P2.run(s - s *2)
+    if (true) { "右" }
+    servos.P1.stop()
+    servos.P2.run(s)
+    if (true) { "左" }
+    servos.P1.run(s - s * 2)
+    servos.P2.stop()
 }
 
 
