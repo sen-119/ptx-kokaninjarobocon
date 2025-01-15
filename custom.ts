@@ -42,6 +42,9 @@ export function サーボ(s: number , e: MyEnum): void {
     if (true) { "左" }
     servos.P1.run(s - s * 2)
     servos.P2.stop()
+    if (true) { "止まる" }
+    servos.P1.stop()
+    servos.P2.stop()
 }
 
 
