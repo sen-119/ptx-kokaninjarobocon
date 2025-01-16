@@ -28,19 +28,19 @@ export function サーボ(s: number , e: MyEnum): void {
         servos.P1.run(s - s * 2)
         servos.P2.run(s)
         }
-    if (MyEnum.後ろ == 1) {
+    else if (MyEnum.後ろ == 1) {
         servos.P1.run(s)
         servos.P2.run(s - s * 2)
         }
-    if (MyEnum.右 == 1) {
+    else if (MyEnum.右 == 1) {
         servos.P1.stop()
         servos.P2.run(s)
         }
-    if (MyEnum.左 == 1) {
+    else if (MyEnum.左 == 1) {
         servos.P1.run(s - s * 2)
         servos.P2.stop()
         }
-    if (MyEnum.止まる == 1) {
+    else if (MyEnum.止まる == 1) {
         servos.P1.stop()
         servos.P2.stop()
         }
