@@ -17,33 +17,37 @@ enum MyEnum {
 //% weight=100 color=#ffa500 icon="\uf078"
 namespace ロボコン {
     /**
-     * TODO: describe your function here
+     * ロボコンのロボットを動作させる。
      * @param n describe parameter here, eg: "速度"
      * @param s describe parameter here, eg: "速度"
      * @param e describe parameter here
      */
     //% block
 export function サーボ(s: number , e: MyEnum): void {
-    if (MyEnum.前) {
+    if (MyEnum.前 == 1) {
         servos.P1.run(s - s * 2)
         servos.P2.run(s)
         }
-    if (MyEnum.後ろ) {
+    if (MyEnum.後ろ == 1) {
         servos.P1.run(s)
         servos.P2.run(s - s * 2)
         }
-    if (MyEnum.右) {
+    if (MyEnum.右 == 1) {
         servos.P1.stop()
         servos.P2.run(s)
         }
-    if (MyEnum.左) {
+    if (MyEnum.左 == 1) {
         servos.P1.run(s - s * 2)
         servos.P2.stop()
         }
-    if (MyEnum.止まる) {
+    if (MyEnum.止まる == 1) {
         servos.P1.stop()
         servos.P2.stop()
         }
+    
+    
+        
+    
 }
 
 
