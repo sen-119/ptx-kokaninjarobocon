@@ -18,9 +18,6 @@ enum MyEnum {
 namespace ロボコン {
     /**
      * ロボコンのロボットを動作させる。
-     * @param n describe parameter here, eg: "速度"
-     * @param s describe parameter here, eg: "速度"
-     * @param e describe parameter here
      */
     //% block
 export function サーボ(s: number , e: MyEnum): void {
