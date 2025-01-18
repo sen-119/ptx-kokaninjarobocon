@@ -14,7 +14,7 @@ enum MyEnum {
 /**
  * Custom blocks
  */
-//% weight=100 color=#ffa500 icon="\f25d"
+//% weight=100 color=#ffa500 icon=Ⓡ
 namespace ロボコン {
     /**
      * ロボコンのロボットを動作させる。
