@@ -22,19 +22,19 @@ namespace ロボコン {
     //% block
 export function サーボ(s: number , e: MyEnum): void {
     if (MyEnum.前 == 1) {
-        servos.P1.run(s - s * 2)
+        servos.P1.run(-s)
         servos.P2.run(s)
         }
     if (MyEnum.後ろ == 1) {
         servos.P1.run(s)
-        servos.P2.run(s - s * 2)
+        servos.P2.run(-s)
         }
     if (MyEnum.右 == 1) {
         servos.P1.stop()
         servos.P2.run(s)
         }
     if (MyEnum.左 == 1) {
-        servos.P1.run(s - s * 2)
+        servos.P1.run(-s)
         servos.P2.stop()
         }
     if (MyEnum.止まる == 1) {
