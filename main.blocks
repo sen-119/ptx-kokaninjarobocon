@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="^/Kha$f7E~GT287*MH+k" x="0" y="0"><statement name="HANDLER"><block type="ロボコン_サーボ" id="@g!u#05;buV5ay..*$G-"><field name="e">MyEnum.前</field><value name="s"><shadow type="math_number" id="B/Ny?+)DLs^DQ!4vKVAR"><field name="NUM">100</field></shadow></value></block></statement></block><block type="device_forever" id="-jZCahtv],:rgg1H+Tg?" x="241" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables></xml>

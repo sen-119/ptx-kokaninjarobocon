@@ -40,11 +40,7 @@ export function サーボ(s: number , e: MyEnum): void {
     if (MyEnum.止まる == 1) {
         servos.P1.stop()
         servos.P2.stop()
-        }
-    
-    
-        
-    
+        }  
 }
 
 
