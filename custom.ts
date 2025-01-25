@@ -14,13 +14,13 @@ enum MyEnum {
 /**
  * Custom blocks
  */
-//% weight=100 color=#ffa500 icon=KNR
+//% weight=100 color=#ffa500 icon=Ⓡ
 namespace ロボコン {
     /**
      * ロボコンのロボットを動作させる。
      */
     //% block
-export function サーボ(s: number , e: MyEnum): void {
+export function 回転サーボ(s: number , e: MyEnum): void {
     if (MyEnum.前 == 1) {
         servos.P1.run(-s)
         servos.P2.run(s)
