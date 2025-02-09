@@ -22,22 +22,22 @@ namespace ロボコン {
     //% block
 export function 回転サーボ(s: number , e: MyEnum): void {
     if (MyEnum.前 == 0) {
-        servos.P1.run(-s)
+        servos.P1.run(-s) 
         servos.P2.run(s)
         }
-    if (MyEnum.後ろ == 0) {
+    if (MyEnum.後ろ == 1) {
         servos.P1.run(s)
         servos.P2.run(-s)
         }
-    if (MyEnum.右 == 0) {
+    if (MyEnum.右 == 2) {
         servos.P1.stop()
         servos.P2.run(s)
         }
-    if (MyEnum.左 == 0) {
+    if (MyEnum.左 == 3) {
         servos.P1.run(-s)
         servos.P2.stop()
         }
-    if (MyEnum.止まる == 0) {
+    if (MyEnum.止まる == 4) {
         servos.P1.stop()
         servos.P2.stop()
         }  
