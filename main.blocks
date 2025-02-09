@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="Bl.=3d.7r!/#D0a;v7*H" x="0" y="0"><statement name="HANDLER"><block type="ロボコン_回転サーボ" id="0wJL8Lvo5FTEM`#1sVe1"><field name="e">MyEnum.止まる</field><value name="s"><shadow type="math_number" id="F~0Pa[@%J3n7Q$YO3MSp"><field name="NUM">100</field></shadow></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables></xml>
