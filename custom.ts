@@ -21,23 +21,23 @@ namespace ロボコン {
      */
     //% block
 export function 回転サーボ(s: number , e: MyEnum): void {
-    if (MyEnum.前 == 1) {
+    if (MyEnum.前 == 0) {
         servos.P1.run(-s)
         servos.P2.run(s)
         }
-    if (MyEnum.後ろ == 1) {
+    if (MyEnum.後ろ == 0) {
         servos.P1.run(s)
         servos.P2.run(-s)
         }
-    if (MyEnum.右 == 1) {
+    if (MyEnum.右 == 0) {
         servos.P1.stop()
         servos.P2.run(s)
         }
-    if (MyEnum.左 == 1) {
+    if (MyEnum.左 == 0) {
         servos.P1.run(-s)
         servos.P2.stop()
         }
-    if (MyEnum.止まる == 1) {
+    if (MyEnum.止まる == 0) {
         servos.P1.stop()
         servos.P2.stop()
         }  
