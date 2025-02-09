@@ -38,8 +38,8 @@ export function 回転サーボ(s: number , e: MyEnum): void {
         servos.P2.stop()
         }
     if (MyEnum.止まる == 0) {
-        servos.P1.stop()
-        servos.P2.stop()
+        servos.P1.run(0)
+        servos.P2.run(0)
         }  
 }
 
