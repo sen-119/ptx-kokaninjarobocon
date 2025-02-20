@@ -10,7 +10,6 @@ enum MyEnum {
     //% block="止まる"
     止まる,
 }
-
 /**
  * Custom blocks
  */
@@ -41,14 +40,8 @@ export function 回転サーボ(s: number , e: MyEnum): void {
         servos.P1.stop()
         servos.P2.stop()
         }  
+
 }
-
-
-
-
-
-
-
 
 
 
